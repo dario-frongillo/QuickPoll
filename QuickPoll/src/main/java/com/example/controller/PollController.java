@@ -1,6 +1,5 @@
 package com.example.controller;
 
-import javax.inject.Inject;
 
 import com.example.domain.Poll;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,14 +13,10 @@ import com.example.repository.PollRepository;
 @RestController
 public class PollController {
 
-    @Inject
+    @Autowired
     private PollRepository pollRepository;
 
-    @Autowired
-    public PollController(PollRepository pollRepository){
-        this.pollRepository = pollRepository;
 
-    }
 
     @RequestMapping(value="/polls", method= RequestMethod.GET)
     public ResponseEntity<Iterable<Poll>> getAllPolls() {

@@ -1,12 +1,13 @@
-package com.example.domain;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableAutoConfiguration(exclude={JpaRepositoriesAutoConfiguration.class})
+@EnableJpaRepositories(basePackages="com.example.repository")
 public class QuickPollApplication {
 
 	public static void main(String[] args) {
