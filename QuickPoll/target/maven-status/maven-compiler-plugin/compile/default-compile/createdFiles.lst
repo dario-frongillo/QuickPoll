@@ -1,0 +1,8 @@
+com\example\domain\Vote.class
+com\example\repository\OptionRepository.class
+com\example\controller\PollController.class
+com\example\domain\Option.class
+com\example\domain\QuickPollApplication.class
+com\example\repository\VoteRepository.class
+com\example\domain\Poll.class
+com\example\repository\PollRepository.class
